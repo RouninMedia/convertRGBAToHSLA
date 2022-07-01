@@ -15,7 +15,7 @@ const convertRGBAToHSLA = (r, g, b, a) => {
 
   let cmin = Math.min(r, g, b);
   let cmax = Math.max(r, g, b);
-  let delta = cmax - cmin;
+  let delta = (cmax - cmin);
 
   // Calculate hue
   switch (true) {
