@@ -22,8 +22,8 @@ const convertRGBAToHSLA = (r, g, b, a) => {
   
     case (delta === 0): h = 0; break;
     case (cmax === r): h = ((g - b) / delta) % 6; break;
-    case (cmax === g): h = (b - r) / delta + 2; break;
-    case (cmax === b): h = (r - g) / delta + 4; break;
+    case (cmax === g): h = (b - r) / (delta + 2); break;
+    case (cmax === b): h = (r - g) / (delta + 4); break;
   }
    
   h = Math.round(h * 60);
