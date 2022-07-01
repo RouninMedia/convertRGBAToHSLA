@@ -39,7 +39,7 @@ const convertRGBAToHSLA = (r, g, b, a) => {
   s = +(s * 100).toFixed(2);
   l = +(l * 100).toFixed(2);  
   
-  return `hsl(${h}, ${s}%, ${l}%, ${a})`;
+  return `hsla(${h}, ${s}%, ${l}%, ${a})`;
 }
 
 console.log(convertRGBAToHSLA(147, 133, 26, 0.66));
