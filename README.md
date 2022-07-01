@@ -3,7 +3,7 @@ Converts colours from rgba() format to hsla() format.
 
 ```js
 
-function RGBToHSL(r, g, b, a) {
+function RGBAToHSLA(r, g, b, a) {
 
   let h = 0;
   let s = 0;
@@ -42,6 +42,6 @@ function RGBToHSL(r, g, b, a) {
   return `hsl(${h}, ${s}%, ${l}%, ${a})`;
 }
 
-console.log(RGBToHSL(147, 133, 26, 0.66));
+console.log(RGBAToHSLA(147, 133, 26, 0.66));
 
 ```
